@@ -74,8 +74,10 @@ In [computer networks](https://en.wikipedia.org/wiki/Computer_network "Computer 
 	- HTTP cache
 
 
+#### Notes:
+ngix can not work?? how to use 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDY1MDU4NDMsMjM2NzIxNzUzLDE0OT
-U2OTc5NjYsLTE3MzEyNjc1OTMsLTE5MTI5MzIwNzIsODQ1NDU3
-NDIwXX0=
+eyJoaXN0b3J5IjpbMTYwOTk4NDQ5OCwtMTkwNjUwNTg0MywyMz
+Y3MjE3NTMsMTQ5NTY5Nzk2NiwtMTczMTI2NzU5MywtMTkxMjkz
+MjA3Miw4NDU0NTc0MjBdfQ==
 -->
