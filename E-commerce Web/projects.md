@@ -75,9 +75,10 @@ In [computer networks](https://en.wikipedia.org/wiki/Computer_network "Computer 
 
 
 #### Notes:
-ngix can not work?? how to use 
+ngix can not work?? how to use it?
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwOTk4NDQ5OCwtMTkwNjUwNTg0MywyMz
-Y3MjE3NTMsMTQ5NTY5Nzk2NiwtMTczMTI2NzU5MywtMTkxMjkz
-MjA3Miw4NDU0NTc0MjBdfQ==
+eyJoaXN0b3J5IjpbMzYzMjMxMDY4LC0xOTA2NTA1ODQzLDIzNj
+cyMTc1MywxNDk1Njk3OTY2LC0xNzMxMjY3NTkzLC0xOTEyOTMy
+MDcyLDg0NTQ1NzQyMF19
 -->
