@@ -43,9 +43,11 @@ WEB container, J2EE
 - Advantage
 	- Easy to manage project. Using archetype
 	- Avoid copy and version conflix of jar parckage
+	- Release and snapshot, easy for collaboration
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDEzNTMyNjMsODQ1NDU3NDIwXX0=
+eyJoaXN0b3J5IjpbLTE5MTI5MzIwNzIsODQ1NDU3NDIwXX0=
 -->
