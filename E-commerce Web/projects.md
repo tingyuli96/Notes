@@ -24,7 +24,7 @@
 
 
 
-#### tomcat
+#### Tomcat
 WEB container, J2EE 
 - file structure
 
@@ -49,7 +49,7 @@ WEB container, J2EE
 #### OpenSSL
 
 #### Nginx - Reverse proxy
-- insxta
+- install
 `brew install nginx`
 ```
 The default port has been set in /usr/local/etc/nginx/nginx.conf to 8080 so that
@@ -63,11 +63,11 @@ Or, if you don't want/need a background service you can just run:
   nginx
   ```
   
-##### Overview
+- Overview
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzM5MTA0OTIsLTE3MzEyNjc1OTMsLT
-E5MTI5MzIwNzIsODQ1NDU3NDIwXX0=
+eyJoaXN0b3J5IjpbMTQ5NTY5Nzk2NiwtMTczMTI2NzU5MywtMT
+kxMjkzMjA3Miw4NDU0NTc0MjBdfQ==
 -->
