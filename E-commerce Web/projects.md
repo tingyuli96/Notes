@@ -64,10 +64,12 @@ Or, if you don't want/need a background service you can just run:
   ```
   
 - Overview
-
+In [computer networks](https://en.wikipedia.org/wiki/Computer_network "Computer network"), a **reverse proxy** is a type of [proxy server](https://en.wikipedia.org/wiki/Proxy_server "Proxy server") that retrieves resources on behalf of a [client](https://en.wikipedia.org/wiki/Client_(computing) "Client (computing)") from one or more [servers](https://en.wikipedia.org/wiki/Server_(computing) "Server (computing)"). These resources are then returned to the client, appearing as if they originated from the proxy server itself.[[1]](https://en.wikipedia.org/wiki/Reverse_proxy#cite_note-apache-forward-reverse-1) Unlike a [forward proxy](https://en.wikipedia.org/wiki/Forward_proxy "Forward proxy"), which is an intermediary for its associated clients to contact any server, a reverse proxy is an intermediary for its associated servers to be contacted by any client. In other words, a _proxy_ acts on behalf of the client(s), while a _reverse proxy_ acts on behalf of the server(s).
+	-- wikipedia
+	
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NTY5Nzk2NiwtMTczMTI2NzU5MywtMT
-kxMjkzMjA3Miw4NDU0NTc0MjBdfQ==
+eyJoaXN0b3J5IjpbMjM2NzIxNzUzLDE0OTU2OTc5NjYsLTE3Mz
+EyNjc1OTMsLTE5MTI5MzIwNzIsODQ1NDU3NDIwXX0=
 -->
