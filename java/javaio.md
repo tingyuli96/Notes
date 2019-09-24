@@ -11,9 +11,12 @@ read next line
 read next int
 `int i = scanner.nextInt();`
 
+detect end of file
+`scan.hasNext()`
+
 **Notes**
 after read int, scanner won't take the `\n` string, so `scanner.nextLine()` `scanner.next()` will read this character
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Njg4NTU4MTVdfQ==
+eyJoaXN0b3J5IjpbLTI0NDUzMjgxMSwtMTk2ODg1NTgxNV19
 -->
