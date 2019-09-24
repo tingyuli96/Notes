@@ -12,7 +12,8 @@ read next int
 `int i = scanner.nextInt();`
 
 **Notes**
-after read int, 
+after read int, scanner won't take the `\n` string, so `scanner.nextLine()` `scanner.next()` will read this character
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDY3ODc2NzhdfQ==
+eyJoaXN0b3J5IjpbLTE5Njg4NTU4MTVdfQ==
 -->
