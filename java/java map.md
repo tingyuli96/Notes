@@ -2,7 +2,7 @@
 
 [iterate an map](https://www.geeksforgeeks.org/iterate-map-java/)
 
-java collection sort  - customize ope
+java collection sort  - customize operator
 ```
 class Student 
 { 
@@ -63,6 +63,6 @@ data structure
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjA4NzU1NjMsLTE1ODczNjI2OTNdfQ
+eyJoaXN0b3J5IjpbLTE2OTY0NTA0MDUsLTE1ODczNjI2OTNdfQ
 ==
 -->
