@@ -5,7 +5,7 @@ If given post-order and pre-order, the tree can be construct only when the tree 
 #### why
 
 
-The key to get a unique traverse of a tree is to distinct the left and right children. 
+The key to get a unique traverse of a tree is to mark the left and right children differently.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA3MzYzNzM1LDIwNTQ4NjU1OTFdfQ==
+eyJoaXN0b3J5IjpbLTk5ODU2MDc2LDIwNTQ4NjU1OTFdfQ==
 -->
