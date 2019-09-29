@@ -1,5 +1,7 @@
 #### CORS
-# Cross-Origin Resource Sharing
+Cross-Origin Resource Sharing
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzE1ODQ3OV19
+eyJoaXN0b3J5IjpbMjEyNTM5OTcyOF19
 -->
