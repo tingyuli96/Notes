@@ -22,9 +22,9 @@ gcloud dataproc jobs submit pyspark --cluster demo-cluster --properties spark.ja
 ````
 bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic tes
 ````
-
+gcloud dataproc jobs submit pyspark --cluster demo-cluster --jars gs://bigdata-01/spark-streaming-kafka-0-8-assembly_2.10-2.2.1.jar streaming.py  -- 35.231.176.166:2181 test
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTczMTI5MSwyMDIzMzc1ODYzLDE5MT
-MyOTUzODMsLTIwOTQ1NzMyMTQsMzk4NDI4Mzk1LDEzMzQzNTg0
-MjcsLTE2MzU3NTMxNDRdfQ==
+eyJoaXN0b3J5IjpbNTQ1NTIzNDQ1LC0xMTU3MzEyOTEsMjAyMz
+M3NTg2MywxOTEzMjk1MzgzLC0yMDk0NTczMjE0LDM5ODQyODM5
+NSwxMzM0MzU4NDI3LC0xNjM1NzUzMTQ0XX0=
 -->
