@@ -24,7 +24,7 @@ bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 -
 ````
 Worked one:
 ````
-gcloud dataproc jobs submit pyspark --cluster demo-cluster --jars gs://bigdata-01/spark-streaming-kafka-0-8-assembly_2.10-2.2.1.jar streaming.py  -- hw3-w- test
+gcloud dataproc jobs submit pyspark --cluster hw3 --jars gs://bigdata-01/spark-streaming-kafka-0-8-assembly_2.10-2.2.1.jar streaming.py  -- hw3-w-1:9092 test
 ````
 
 Kafka
@@ -35,9 +35,9 @@ kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --par
 [https://www.learningjournal.guru/courses/kafka/kafka-foundation-training/kafka-in-gcp/](https://www.learningjournal.guru/courses/kafka/kafka-foundation-training/kafka-in-gcp/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc5MjQ4NTk4LDQ2NzI5NzY2NiwtNzc4OT
-U0NzYxLC05NDk5MDEyNjAsMTM2MDgwNzMzNSwtMTQ2MDc0Njg5
-Nyw1NDU1MjM0NDUsLTExNTczMTI5MSwyMDIzMzc1ODYzLDE5MT
-MyOTUzODMsLTIwOTQ1NzMyMTQsMzk4NDI4Mzk1LDEzMzQzNTg0
-MjcsLTE2MzU3NTMxNDRdfQ==
+eyJoaXN0b3J5IjpbLTQ1NTAxODcxMSw0NjcyOTc2NjYsLTc3OD
+k1NDc2MSwtOTQ5OTAxMjYwLDEzNjA4MDczMzUsLTE0NjA3NDY4
+OTcsNTQ1NTIzNDQ1LC0xMTU3MzEyOTEsMjAyMzM3NTg2MywxOT
+EzMjk1MzgzLC0yMDk0NTczMjE0LDM5ODQyODM5NSwxMzM0MzU4
+NDI3LC0xNjM1NzUzMTQ0XX0=
 -->
