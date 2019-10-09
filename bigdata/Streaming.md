@@ -9,7 +9,8 @@ gcloud dataproc clusters create hw3 --metadata "run-on-master=true" --initializa
 gcloud dataproc clusters create hw3 \
     --num-masters 3 \
     --metadata "run-on-master=true" \
-    --initialization-actions gs://bigdata-01/kafka/kafka.sh
+    --initialization-actions gs://bigdata-01/kafka/kafka.sh \
+    --region global
 ```
 
 --optional-components=ZOOKEEPER
@@ -34,8 +35,8 @@ kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --par
 [https://www.learningjournal.guru/courses/kafka/kafka-foundation-training/kafka-in-gcp/](https://www.learningjournal.guru/courses/kafka/kafka-foundation-training/kafka-in-gcp/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3ODk1NDc2MSwxMzYwODA3MzM1LC0xND
-YwNzQ2ODk3LDU0NTUyMzQ0NSwtMTE1NzMxMjkxLDIwMjMzNzU4
-NjMsMTkxMzI5NTM4MywtMjA5NDU3MzIxNCwzOTg0MjgzOTUsMT
-MzNDM1ODQyNywtMTYzNTc1MzE0NF19
+eyJoaXN0b3J5IjpbLTk0OTkwMTI2MCwtNzc4OTU0NzYxLDEzNj
+A4MDczMzUsLTE0NjA3NDY4OTcsNTQ1NTIzNDQ1LC0xMTU3MzEy
+OTEsMjAyMzM3NTg2MywxOTEzMjk1MzgzLC0yMDk0NTczMjE0LD
+M5ODQyODM5NSwxMzM0MzU4NDI3LC0xNjM1NzUzMTQ0XX0=
 -->
