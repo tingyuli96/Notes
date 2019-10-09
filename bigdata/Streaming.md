@@ -31,9 +31,11 @@ Kafka
 kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
 ````
 
+[https://www.learningjournal.guru/courses/kafka/kafka-foundation-training/kafka-in-gcp/](https://www.learningjournal.guru/courses/kafka/kafka-foundation-training/kafka-in-gcp/)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDUwMjQxNjAsLTE0NjA3NDY4OTcsNT
-Q1NTIzNDQ1LC0xMTU3MzEyOTEsMjAyMzM3NTg2MywxOTEzMjk1
-MzgzLC0yMDk0NTczMjE0LDM5ODQyODM5NSwxMzM0MzU4NDI3LC
-0xNjM1NzUzMTQ0XX0=
+eyJoaXN0b3J5IjpbMTM2MDgwNzMzNSwtMTQ2MDc0Njg5Nyw1ND
+U1MjM0NDUsLTExNTczMTI5MSwyMDIzMzc1ODYzLDE5MTMyOTUz
+ODMsLTIwOTQ1NzMyMTQsMzk4NDI4Mzk1LDEzMzQzNTg0MjcsLT
+E2MzU3NTMxNDRdfQ==
 -->
