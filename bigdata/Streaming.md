@@ -17,12 +17,14 @@ gcloud dataproc clusters create hw3 \
 --enable-component-gateway 
 
 
-
+````
+gcloud dataproc jobs submit pyspark --cluster demo-cluster --properties spark.jars.packages=org.apache.spark:spark-sql-kafka-0-10_2.11:2.2.0 streaming.py  -- 35.231.176.166:2181 test
 ````
 bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic tes
 ````
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMzI5NTM4MywtMjA5NDU3MzIxNCwzOT
-g0MjgzOTUsMTMzNDM1ODQyNywtMTYzNTc1MzE0NF19
+eyJoaXN0b3J5IjpbMjAyMzM3NTg2MywxOTEzMjk1MzgzLC0yMD
+k0NTczMjE0LDM5ODQyODM5NSwxMzM0MzU4NDI3LC0xNjM1NzUz
+MTQ0XX0=
 -->
