@@ -11,6 +11,7 @@ gcloud dataproc clusters create hw3 \
     --metadata "run-on-master=true" \
     --initialization-actions gs://bigdata-01/kafka/kafka.sh
 ```
+CPUS cuda wait 
 
 --optional-components=ZOOKEEPER
 
@@ -34,9 +35,9 @@ kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --par
 [https://www.learningjournal.guru/courses/kafka/kafka-foundation-training/kafka-in-gcp/](https://www.learningjournal.guru/courses/kafka/kafka-foundation-training/kafka-in-gcp/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3ODk1NDc2MSwtOTQ5OTAxMjYwLC03Nz
-g5NTQ3NjEsMTM2MDgwNzMzNSwtMTQ2MDc0Njg5Nyw1NDU1MjM0
-NDUsLTExNTczMTI5MSwyMDIzMzc1ODYzLDE5MTMyOTUzODMsLT
-IwOTQ1NzMyMTQsMzk4NDI4Mzk1LDEzMzQzNTg0MjcsLTE2MzU3
-NTMxNDRdfQ==
+eyJoaXN0b3J5IjpbNDY3Mjk3NjY2LC03Nzg5NTQ3NjEsLTk0OT
+kwMTI2MCwxMzYwODA3MzM1LC0xNDYwNzQ2ODk3LDU0NTUyMzQ0
+NSwtMTE1NzMxMjkxLDIwMjMzNzU4NjMsMTkxMzI5NTM4MywtMj
+A5NDU3MzIxNCwzOTg0MjgzOTUsMTMzNDM1ODQyNywtMTYzNTc1
+MzE0NF19
 -->
