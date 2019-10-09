@@ -15,7 +15,14 @@ gcloud dataproc clusters create hw3 \
 --optional-components=ZOOKEEPER
 
 --enable-component-gateway 
+
+
+
+````
+bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic tes
+````
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTQ1NzMyMTQsMzk4NDI4Mzk1LDEzMz
-QzNTg0MjcsLTE2MzU3NTMxNDRdfQ==
+eyJoaXN0b3J5IjpbMTkxMzI5NTM4MywtMjA5NDU3MzIxNCwzOT
+g0MjgzOTUsMTMzNDM1ODQyNywtMTYzNTc1MzE0NF19
 -->
