@@ -4,9 +4,10 @@ ZooKeeper is a centralized service for maintaining configuration information, na
 
 Create a dataproc with kafka
 ```
-gcloud beta dataproc clusters create hw3 --optional-components=ZOOKEEPER --enable-component-gateway --metadata "run-on-master=true" --initialization-actions gs://bigdata-01/kafka/kafka.sh --bucket bigdata-01
+gcloud dataproc clusters create hw3  --enable-component-gateway --metadata "run-on-master=true" --initialization-actions gs://bigdata-01/kafka/kafka.sh --bucket bigdata-01
 ```
+--optional-components=ZOOKEEPER
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNTUzMzE4OSwzOTg0MjgzOTUsMTMzND
-M1ODQyNywtMTYzNTc1MzE0NF19
+eyJoaXN0b3J5IjpbOTY3MjIzMTY3LDM5ODQyODM5NSwxMzM0Mz
+U4NDI3LC0xNjM1NzUzMTQ0XX0=
 -->
