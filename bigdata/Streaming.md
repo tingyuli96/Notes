@@ -4,7 +4,7 @@ ZooKeeper is a centralized service for maintaining configuration information, na
 
 Create a dataproc with kafka
 ```
-gcloud dataproc clusters create hw3  --metadata "run-on-master=true" --initialization-actions gs://bigdata-01/kafka/kafka.sh --bucket bigdata-01
+gcloud dataproc clusters create hw3 --metadata "run-on-master=true" --initialization-actions gs://bigdata-01/kafka/kafka.sh --bucket bigdata-01
 
 gcloud dataproc clusters create hw3 \
     --num-masters 3 \
@@ -34,8 +34,8 @@ kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --par
 [https://www.learningjournal.guru/courses/kafka/kafka-foundation-training/kafka-in-gcp/](https://www.learningjournal.guru/courses/kafka/kafka-foundation-training/kafka-in-gcp/)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MDgwNzMzNSwtMTQ2MDc0Njg5Nyw1ND
-U1MjM0NDUsLTExNTczMTI5MSwyMDIzMzc1ODYzLDE5MTMyOTUz
-ODMsLTIwOTQ1NzMyMTQsMzk4NDI4Mzk1LDEzMzQzNTg0MjcsLT
-E2MzU3NTMxNDRdfQ==
+eyJoaXN0b3J5IjpbLTc3ODk1NDc2MSwxMzYwODA3MzM1LC0xND
+YwNzQ2ODk3LDU0NTUyMzQ0NSwtMTE1NzMxMjkxLDIwMjMzNzU4
+NjMsMTkxMzI5NTM4MywtMjA5NDU3MzIxNCwzOTg0MjgzOTUsMT
+MzNDM1ODQyNywtMTYzNTc1MzE0NF19
 -->
