@@ -51,15 +51,16 @@ deploy a kafka engine
 publish topic on it
 
 
-### Way2
+### Way2: using socket
 
+gcloud beta dataproc clusters create hw32 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata PIP_PACKAGES=requests-oauthlib --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzczMjgwMTksLTQxOTU5ODgxMywxND
-QzMDA1MTc1LC0xMzMxMzk3Njk2LC05NDcyMjAzNDksMTY2Njc5
-Njk2MSwtODI3NzE1MzQ4LC0yMDEyNTEyMTE4LDIwMTQ3MjgzLC
-00NTUwMTg3MTEsNDY3Mjk3NjY2LC03Nzg5NTQ3NjEsLTk0OTkw
-MTI2MCwxMzYwODA3MzM1LC0xNDYwNzQ2ODk3LDU0NTUyMzQ0NS
-wtMTE1NzMxMjkxLDIwMjMzNzU4NjMsMTkxMzI5NTM4MywtMjA5
-NDU3MzIxNF19
+eyJoaXN0b3J5IjpbLTg0NDk2Njk0MiwtNDE5NTk4ODEzLDE0ND
+MwMDUxNzUsLTEzMzEzOTc2OTYsLTk0NzIyMDM0OSwxNjY2Nzk2
+OTYxLC04Mjc3MTUzNDgsLTIwMTI1MTIxMTgsMjAxNDcyODMsLT
+Q1NTAxODcxMSw0NjcyOTc2NjYsLTc3ODk1NDc2MSwtOTQ5OTAx
+MjYwLDEzNjA4MDczMzUsLTE0NjA3NDY4OTcsNTQ1NTIzNDQ1LC
+0xMTU3MzEyOTEsMjAyMzM3NTg2MywxOTEzMjk1MzgzLC0yMDk0
+NTczMjE0XX0=
 -->
