@@ -41,12 +41,22 @@ spark-submit --jars ~/Downloads/spark-streaming-kafka-0-8-assembly_2.10-2.2.1.ja
 [35.237.39.36](https://35.237.39.36/)
 
 gcloud beta dataproc clusters create hw22 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata PIP_PACKAGES=requests-oauthlib --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node
+
+
+
+create a cluster 
+can with or without kafka
+
+deploy a kafka engine
+publish topic on it
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MzAwNTE3NSwtMTMzMTM5NzY5NiwtOT
-Q3MjIwMzQ5LDE2NjY3OTY5NjEsLTgyNzcxNTM0OCwtMjAxMjUx
-MjExOCwyMDE0NzI4MywtNDU1MDE4NzExLDQ2NzI5NzY2NiwtNz
-c4OTU0NzYxLC05NDk5MDEyNjAsMTM2MDgwNzMzNSwtMTQ2MDc0
-Njg5Nyw1NDU1MjM0NDUsLTExNTczMTI5MSwyMDIzMzc1ODYzLD
-E5MTMyOTUzODMsLTIwOTQ1NzMyMTQsMzk4NDI4Mzk1LDEzMzQz
-NTg0MjddfQ==
+eyJoaXN0b3J5IjpbLTQxOTU5ODgxMywxNDQzMDA1MTc1LC0xMz
+MxMzk3Njk2LC05NDcyMjAzNDksMTY2Njc5Njk2MSwtODI3NzE1
+MzQ4LC0yMDEyNTEyMTE4LDIwMTQ3MjgzLC00NTUwMTg3MTEsND
+Y3Mjk3NjY2LC03Nzg5NTQ3NjEsLTk0OTkwMTI2MCwxMzYwODA3
+MzM1LC0xNDYwNzQ2ODk3LDU0NTUyMzQ0NSwtMTE1NzMxMjkxLD
+IwMjMzNzU4NjMsMTkxMzI5NTM4MywtMjA5NDU3MzIxNCwzOTg0
+MjgzOTVdfQ==
 -->
