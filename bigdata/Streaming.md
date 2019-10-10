@@ -49,26 +49,29 @@ can with or without kafka
 
 deploy a kafka engine
 publish topic on it
-
+```
+gcloud dataproc jobs submit pyspark --cluster hw3 --jars gs://bigdata-01/spark-streaming-kafka-0-8-assembly_2.11-2.3.3.jar streaming.py  -- 35.237.39.36:9092 test
+```
 
 ### Way2: using socket
 
 with kafka
-
+```
 gcloud beta dataproc clusters create hw32 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=requests-oauthlib google-cloud-bigquery' --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node
-
+```
+```
 gcloud beta dataproc clusters create hw31 --optional-components=ANACONDA,JUPYTER,ZOOKEEPER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=google-cloud-bigquery' --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node --initialization-actions gs://bigdata-01/kafka/kafka.sh
-
+```
 pull from twitter api ok
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNTg4NjU1OSwtNzU3MTQ0OTAxLC0xMT
-g3NTA4MDk0LC04NDQ5NjY5NDIsLTQxOTU5ODgxMywxNDQzMDA1
-MTc1LC0xMzMxMzk3Njk2LC05NDcyMjAzNDksMTY2Njc5Njk2MS
-wtODI3NzE1MzQ4LC0yMDEyNTEyMTE4LDIwMTQ3MjgzLC00NTUw
-MTg3MTEsNDY3Mjk3NjY2LC03Nzg5NTQ3NjEsLTk0OTkwMTI2MC
-wxMzYwODA3MzM1LC0xNDYwNzQ2ODk3LDU0NTUyMzQ0NSwtMTE1
-NzMxMjkxXX0=
+eyJoaXN0b3J5IjpbLTM2MzQ0NDU4OSwxMTA1ODg2NTU5LC03NT
+cxNDQ5MDEsLTExODc1MDgwOTQsLTg0NDk2Njk0MiwtNDE5NTk4
+ODEzLDE0NDMwMDUxNzUsLTEzMzEzOTc2OTYsLTk0NzIyMDM0OS
+wxNjY2Nzk2OTYxLC04Mjc3MTUzNDgsLTIwMTI1MTIxMTgsMjAx
+NDcyODMsLTQ1NTAxODcxMSw0NjcyOTc2NjYsLTc3ODk1NDc2MS
+wtOTQ5OTAxMjYwLDEzNjA4MDczMzUsLTE0NjA3NDY4OTcsNTQ1
+NTIzNDQ1XX0=
 -->
