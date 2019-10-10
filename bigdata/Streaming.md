@@ -37,11 +37,13 @@ kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --par
 spark-submit --jars ~/Downloads/spark-streaming-kafka-0-8-assembly_2.10-2.2.1.jar streaming.py  35.237.39.36:9092 test
 
 [35.237.39.36](https://35.237.39.36/)
+
+gcloud beta dataproc clusters create hw22 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway  --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --region us-east1-c
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNzcxNTM0OCwtMjAxMjUxMjExOCwyMD
-E0NzI4MywtNDU1MDE4NzExLDQ2NzI5NzY2NiwtNzc4OTU0NzYx
-LC05NDk5MDEyNjAsMTM2MDgwNzMzNSwtMTQ2MDc0Njg5Nyw1ND
-U1MjM0NDUsLTExNTczMTI5MSwyMDIzMzc1ODYzLDE5MTMyOTUz
-ODMsLTIwOTQ1NzMyMTQsMzk4NDI4Mzk1LDEzMzQzNTg0MjcsLT
-E2MzU3NTMxNDRdfQ==
+eyJoaXN0b3J5IjpbMTgxMDc2NzQ1NywtODI3NzE1MzQ4LC0yMD
+EyNTEyMTE4LDIwMTQ3MjgzLC00NTUwMTg3MTEsNDY3Mjk3NjY2
+LC03Nzg5NTQ3NjEsLTk0OTkwMTI2MCwxMzYwODA3MzM1LC0xND
+YwNzQ2ODk3LDU0NTUyMzQ0NSwtMTE1NzMxMjkxLDIwMjMzNzU4
+NjMsMTkxMzI5NTM4MywtMjA5NDU3MzIxNCwzOTg0MjgzOTUsMT
+MzNDM1ODQyNywtMTYzNTc1MzE0NF19
 -->
