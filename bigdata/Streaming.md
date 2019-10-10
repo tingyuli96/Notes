@@ -34,11 +34,11 @@ kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --par
 
 [https://www.learningjournal.guru/courses/kafka/kafka-foundation-training/kafka-in-gcp/](https://www.learningjournal.guru/courses/kafka/kafka-foundation-training/kafka-in-gcp/)
 
-spark-submit --jars ~/Downloads/spark-streaming-kafka-0-8-assembly_2.10-2.2.1.jar streaming.py  -- 35.237.39.36:9092 test
+spark-submit --jars ~/Downloads/spark-streaming-kafka-0-8-assembly_2.10-2.2.1.jar streaming.py  35.237.39.36:9092 test
 
 [35.237.39.36](https://35.237.39.36/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTkwMjE4MzQsMjAxNDcyODMsLTQ1NT
+eyJoaXN0b3J5IjpbLTIwMTI1MTIxMTgsMjAxNDcyODMsLTQ1NT
 AxODcxMSw0NjcyOTc2NjYsLTc3ODk1NDc2MSwtOTQ5OTAxMjYw
 LDEzNjA4MDczMzUsLTE0NjA3NDY4OTcsNTQ1NTIzNDQ1LC0xMT
 U3MzEyOTEsMjAyMzM3NTg2MywxOTEzMjk1MzgzLC0yMDk0NTcz
