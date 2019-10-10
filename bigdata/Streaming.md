@@ -53,16 +53,18 @@ publish topic on it
 
 ### Way2: using socket
 
+with kafka
+
 gcloud beta dataproc clusters create hw31 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata PIP_PACKAGES=requests-oauthlib --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node --initialization-actions gs://bigdata-01/kafka/kafka.sh
 
 pull from twitter api
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NjYyMTI5OCwtODQ0OTY2OTQyLC00MT
-k1OTg4MTMsMTQ0MzAwNTE3NSwtMTMzMTM5NzY5NiwtOTQ3MjIw
-MzQ5LDE2NjY3OTY5NjEsLTgyNzcxNTM0OCwtMjAxMjUxMjExOC
-wyMDE0NzI4MywtNDU1MDE4NzExLDQ2NzI5NzY2NiwtNzc4OTU0
-NzYxLC05NDk5MDEyNjAsMTM2MDgwNzMzNSwtMTQ2MDc0Njg5Ny
-w1NDU1MjM0NDUsLTExNTczMTI5MSwyMDIzMzc1ODYzLDE5MTMy
-OTUzODNdfQ==
+eyJoaXN0b3J5IjpbLTExODc1MDgwOTQsLTg0NDk2Njk0MiwtND
+E5NTk4ODEzLDE0NDMwMDUxNzUsLTEzMzEzOTc2OTYsLTk0NzIy
+MDM0OSwxNjY2Nzk2OTYxLC04Mjc3MTUzNDgsLTIwMTI1MTIxMT
+gsMjAxNDcyODMsLTQ1NTAxODcxMSw0NjcyOTc2NjYsLTc3ODk1
+NDc2MSwtOTQ5OTAxMjYwLDEzNjA4MDczMzUsLTE0NjA3NDY4OT
+csNTQ1NTIzNDQ1LC0xMTU3MzEyOTEsMjAyMzM3NTg2MywxOTEz
+Mjk1MzgzXX0=
 -->
