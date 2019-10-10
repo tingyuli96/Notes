@@ -26,7 +26,7 @@ Worked one:
 ````
 gcloud dataproc jobs submit pyspark --cluster hw3 --jars gs://bigdata-01/spark-streaming-kafka-0-8-assembly_2.10-2.2.1.jar streaming.py  -- hw3-w-1:9092 test
 ````
-gcloud dataproc jobs submit pyspark --cluster hw3 streaming.py  -- 35.237.39.36:9092 test
+gcloud dataproc jobs submit pyspark --cluster hw3 --packages org.apache.spark:spark-streaming-kafka-0-8:2.3.3 streaming.py  -- 35.237.39.36:9092 test
 Kafka
 
 --jars gs://bigdata-01/spark-streaming-kafka-0-8-assembly_2.10-2.2.1.jar 
@@ -42,11 +42,11 @@ spark-submit --jars ~/Downloads/spark-streaming-kafka-0-8-assembly_2.10-2.2.1.ja
 
 gcloud beta dataproc clusters create hw22 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata PIP_PACKAGES=requests-oauthlib --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTAxNDI1NjkxLC05NDcyMjAzNDksMTY2Nj
-c5Njk2MSwtODI3NzE1MzQ4LC0yMDEyNTEyMTE4LDIwMTQ3Mjgz
-LC00NTUwMTg3MTEsNDY3Mjk3NjY2LC03Nzg5NTQ3NjEsLTk0OT
-kwMTI2MCwxMzYwODA3MzM1LC0xNDYwNzQ2ODk3LDU0NTUyMzQ0
-NSwtMTE1NzMxMjkxLDIwMjMzNzU4NjMsMTkxMzI5NTM4MywtMj
-A5NDU3MzIxNCwzOTg0MjgzOTUsMTMzNDM1ODQyNywtMTYzNTc1
-MzE0NF19
+eyJoaXN0b3J5IjpbLTEzMzEzOTc2OTYsLTk0NzIyMDM0OSwxNj
+Y2Nzk2OTYxLC04Mjc3MTUzNDgsLTIwMTI1MTIxMTgsMjAxNDcy
+ODMsLTQ1NTAxODcxMSw0NjcyOTc2NjYsLTc3ODk1NDc2MSwtOT
+Q5OTAxMjYwLDEzNjA4MDczMzUsLTE0NjA3NDY4OTcsNTQ1NTIz
+NDQ1LC0xMTU3MzEyOTEsMjAyMzM3NTg2MywxOTEzMjk1MzgzLC
+0yMDk0NTczMjE0LDM5ODQyODM5NSwxMzM0MzU4NDI3LC0xNjM1
+NzUzMTQ0XX0=
 -->
