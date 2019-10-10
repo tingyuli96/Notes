@@ -59,10 +59,12 @@ gcloud beta dataproc clusters create hw32 --optional-components=ANACONDA,JUPYTER
 
 gcloud beta dataproc clusters create hw31 --optional-components=ANACONDA,JUPYTER,ZOOKEEPER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=google-cloud-bigquery' --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node --initialization-actions gs://bigdata-01/kafka/kafka.sh
 
-pull from twitter api
+pull from twitter api ok
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MzEzNTUzNSwtNzU3MTQ0OTAxLC0xMT
+eyJoaXN0b3J5IjpbMTEwNTg4NjU1OSwtNzU3MTQ0OTAxLC0xMT
 g3NTA4MDk0LC04NDQ5NjY5NDIsLTQxOTU5ODgxMywxNDQzMDA1
 MTc1LC0xMzMxMzk3Njk2LC05NDcyMjAzNDksMTY2Njc5Njk2MS
 wtODI3NzE1MzQ4LC0yMDEyNTEyMTE4LDIwMTQ3MjgzLC00NTUw
