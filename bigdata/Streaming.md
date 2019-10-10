@@ -53,12 +53,12 @@ publish topic on it
 
 ### Way2: using socket
 
-gcloud beta dataproc clusters create hw32 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata PIP_PACKAGES=requests-oauthlib --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node
+gcloud beta dataproc clusters create hw31 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata PIP_PACKAGES=requests-oauthlib --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node --initialization-actions gs://bigdata-01/kafka/kafka.sh
 
 pull from twitter api
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNTU5Mjg5NiwtODQ0OTY2OTQyLC00MT
+eyJoaXN0b3J5IjpbMTA1NjYyMTI5OCwtODQ0OTY2OTQyLC00MT
 k1OTg4MTMsMTQ0MzAwNTE3NSwtMTMzMTM5NzY5NiwtOTQ3MjIw
 MzQ5LDE2NjY3OTY5NjEsLTgyNzcxNTM0OCwtMjAxMjUxMjExOC
 wyMDE0NzI4MywtNDU1MDE4NzExLDQ2NzI5NzY2NiwtNzc4OTU0
