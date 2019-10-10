@@ -57,16 +57,16 @@ with kafka
 
 gcloud beta dataproc clusters create hw31 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata PIP_PACKAGES=requests-oauthlib --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node
 
-gcloud beta dataproc clusters create hw31 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata PIP_PACKAGES=requests-oauthlib --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node --initialization-actions gs://bigdata-01/kafka/kafka.sh
+gcloud beta dataproc clusters create hw31 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=requests-oauthlib  --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node --initialization-actions gs://bigdata-01/kafka/kafka.sh
 
 pull from twitter api
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NzE0NDkwMSwtMTE4NzUwODA5NCwtOD
-Q0OTY2OTQyLC00MTk1OTg4MTMsMTQ0MzAwNTE3NSwtMTMzMTM5
-NzY5NiwtOTQ3MjIwMzQ5LDE2NjY3OTY5NjEsLTgyNzcxNTM0OC
-wtMjAxMjUxMjExOCwyMDE0NzI4MywtNDU1MDE4NzExLDQ2NzI5
-NzY2NiwtNzc4OTU0NzYxLC05NDk5MDEyNjAsMTM2MDgwNzMzNS
-wtMTQ2MDc0Njg5Nyw1NDU1MjM0NDUsLTExNTczMTI5MSwyMDIz
-Mzc1ODYzXX0=
+eyJoaXN0b3J5IjpbNDYxNDU3ODE0LC03NTcxNDQ5MDEsLTExOD
+c1MDgwOTQsLTg0NDk2Njk0MiwtNDE5NTk4ODEzLDE0NDMwMDUx
+NzUsLTEzMzEzOTc2OTYsLTk0NzIyMDM0OSwxNjY2Nzk2OTYxLC
+04Mjc3MTUzNDgsLTIwMTI1MTIxMTgsMjAxNDcyODMsLTQ1NTAx
+ODcxMSw0NjcyOTc2NjYsLTc3ODk1NDc2MSwtOTQ5OTAxMjYwLD
+EzNjA4MDczMzUsLTE0NjA3NDY4OTcsNTQ1NTIzNDQ1LC0xMTU3
+MzEyOTFdfQ==
 -->
