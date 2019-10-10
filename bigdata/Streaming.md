@@ -26,7 +26,7 @@ Worked one:
 ````
 gcloud dataproc jobs submit pyspark --cluster hw3 --jars gs://bigdata-01/spark-streaming-kafka-0-8-assembly_2.10-2.2.1.jar streaming.py  -- hw3-w-1:9092 test
 ````
-gcloud dataproc jobs submit pyspark --cluster hw3 --jars gs://bigdata-01/spark-streaming-kafka-0-8-assembly_2.10-2.2.1.jar streaming.py  -- 35.231.176.166:9092 test
+gcloud dataproc jobs submit pyspark --cluster hw3 --jars gs://bigdata-01/spark-streaming-kafka-0-8-assembly_2.10-2.2.1.jar streaming.py  -- 35.237.39.36:9092 test
 Kafka
 ````
 kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
@@ -38,10 +38,10 @@ spark-submit --jars ~/Downloads/spark-streaming-kafka-0-8-assembly_2.10-2.2.1.ja
 
 [35.237.39.36](https://35.237.39.36/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTI1MTIxMTgsMjAxNDcyODMsLTQ1NT
-AxODcxMSw0NjcyOTc2NjYsLTc3ODk1NDc2MSwtOTQ5OTAxMjYw
-LDEzNjA4MDczMzUsLTE0NjA3NDY4OTcsNTQ1NTIzNDQ1LC0xMT
-U3MzEyOTEsMjAyMzM3NTg2MywxOTEzMjk1MzgzLC0yMDk0NTcz
-MjE0LDM5ODQyODM5NSwxMzM0MzU4NDI3LC0xNjM1NzUzMTQ0XX
-0=
+eyJoaXN0b3J5IjpbLTgyNzcxNTM0OCwtMjAxMjUxMjExOCwyMD
+E0NzI4MywtNDU1MDE4NzExLDQ2NzI5NzY2NiwtNzc4OTU0NzYx
+LC05NDk5MDEyNjAsMTM2MDgwNzMzNSwtMTQ2MDc0Njg5Nyw1ND
+U1MjM0NDUsLTExNTczMTI5MSwyMDIzMzc1ODYzLDE5MTMyOTUz
+ODMsLTIwOTQ1NzMyMTQsMzk4NDI4Mzk1LDEzMzQzNTg0MjcsLT
+E2MzU3NTMxNDRdfQ==
 -->
