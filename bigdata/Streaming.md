@@ -55,12 +55,14 @@ publish topic on it
 
 gcloud beta dataproc clusters create hw32 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata PIP_PACKAGES=requests-oauthlib --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node
 
+pull from twitter api
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0NDk2Njk0MiwtNDE5NTk4ODEzLDE0ND
-MwMDUxNzUsLTEzMzEzOTc2OTYsLTk0NzIyMDM0OSwxNjY2Nzk2
-OTYxLC04Mjc3MTUzNDgsLTIwMTI1MTIxMTgsMjAxNDcyODMsLT
-Q1NTAxODcxMSw0NjcyOTc2NjYsLTc3ODk1NDc2MSwtOTQ5OTAx
-MjYwLDEzNjA4MDczMzUsLTE0NjA3NDY4OTcsNTQ1NTIzNDQ1LC
-0xMTU3MzEyOTEsMjAyMzM3NTg2MywxOTEzMjk1MzgzLC0yMDk0
-NTczMjE0XX0=
+eyJoaXN0b3J5IjpbMTYzNTU5Mjg5NiwtODQ0OTY2OTQyLC00MT
+k1OTg4MTMsMTQ0MzAwNTE3NSwtMTMzMTM5NzY5NiwtOTQ3MjIw
+MzQ5LDE2NjY3OTY5NjEsLTgyNzcxNTM0OCwtMjAxMjUxMjExOC
+wyMDE0NzI4MywtNDU1MDE4NzExLDQ2NzI5NzY2NiwtNzc4OTU0
+NzYxLC05NDk5MDEyNjAsMTM2MDgwNzMzNSwtMTQ2MDc0Njg5Ny
+w1NDU1MjM0NDUsLTExNTczMTI5MSwyMDIzMzc1ODYzLDE5MTMy
+OTUzODNdfQ==
 -->
