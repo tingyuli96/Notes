@@ -38,9 +38,9 @@ spark-submit --jars ~/Downloads/spark-streaming-kafka-0-8-assembly_2.10-2.2.1.ja
 
 [35.237.39.36](https://35.237.39.36/)
 
-gcloud beta dataproc clusters create hw22 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway  --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --region us-east1-c
+gcloud beta dataproc clusters create hw22 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway  --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMDc2NzQ1NywtODI3NzE1MzQ4LC0yMD
+eyJoaXN0b3J5IjpbMTY2Njc5Njk2MSwtODI3NzE1MzQ4LC0yMD
 EyNTEyMTE4LDIwMTQ3MjgzLC00NTUwMTg3MTEsNDY3Mjk3NjY2
 LC03Nzg5NTQ3NjEsLTk0OTkwMTI2MCwxMzYwODA3MzM1LC0xND
 YwNzQ2ODk3LDU0NTUyMzQ0NSwtMTE1NzMxMjkxLDIwMjMzNzU4
