@@ -57,21 +57,21 @@ gcloud dataproc jobs submit pyspark --cluster hw3 --jars gs://bigdata-01/spark-s
 
 with kafka
 ```
-gcloud beta dataproc clusters create hw32 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=requests-oauthlib google-cloud-bigquery' --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node
+gcloud beta dataproc clusters create hw32 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=requests-oauthlib google-cloud-bigquery' --bucket bigdata-01 --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node
 ```
 ```
-gcloud beta dataproc clusters create hw31 --optional-components=ANACONDA,JUPYTER,ZOOKEEPER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=google-cloud-bigquery' --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node --initialization-actions gs://bigdata-01/kafka/kafka.sh
+gcloud beta dataproc clusters create hw31 --optional-components=ANACONDA,JUPYTER,ZOOKEEPER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=google-cloud-bigquery' --bucket bigdata-01 --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node --initialization-actions gs://bigdata-01/kafka/kafka.sh
 ```
 pull from twitter api ok
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MzQ0NDU4OSwxMTA1ODg2NTU5LC03NT
-cxNDQ5MDEsLTExODc1MDgwOTQsLTg0NDk2Njk0MiwtNDE5NTk4
-ODEzLDE0NDMwMDUxNzUsLTEzMzEzOTc2OTYsLTk0NzIyMDM0OS
-wxNjY2Nzk2OTYxLC04Mjc3MTUzNDgsLTIwMTI1MTIxMTgsMjAx
-NDcyODMsLTQ1NTAxODcxMSw0NjcyOTc2NjYsLTc3ODk1NDc2MS
-wtOTQ5OTAxMjYwLDEzNjA4MDczMzUsLTE0NjA3NDY4OTcsNTQ1
-NTIzNDQ1XX0=
+eyJoaXN0b3J5IjpbMTE2ODM2NjE2MywtMzYzNDQ0NTg5LDExMD
+U4ODY1NTksLTc1NzE0NDkwMSwtMTE4NzUwODA5NCwtODQ0OTY2
+OTQyLC00MTk1OTg4MTMsMTQ0MzAwNTE3NSwtMTMzMTM5NzY5Ni
+wtOTQ3MjIwMzQ5LDE2NjY3OTY5NjEsLTgyNzcxNTM0OCwtMjAx
+MjUxMjExOCwyMDE0NzI4MywtNDU1MDE4NzExLDQ2NzI5NzY2Ni
+wtNzc4OTU0NzYxLC05NDk5MDEyNjAsMTM2MDgwNzMzNSwtMTQ2
+MDc0Njg5N119
 -->
