@@ -55,18 +55,18 @@ publish topic on it
 
 with kafka
 
-gcloud beta dataproc clusters create hw31 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=requests-oauthlib google-cloud-bigquery --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node
+gcloud beta dataproc clusters create hw32 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=requests-oauthlib google-cloud-bigquery' --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node
 
-gcloud beta dataproc clusters create hw31 --optional-components=ANACONDA,JUPYTERZOOKEEPER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=google-cloud-bigquery' --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node --initialization-actions gs://bigdata-01/kafka/kafka.sh
+gcloud beta dataproc clusters create hw31 --optional-components=ANACONDA,JUPYTER,ZOOKEEPER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=google-cloud-bigquery' --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node --initialization-actions gs://bigdata-01/kafka/kafka.sh
 
 pull from twitter api
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDkyMTYxMDMsLTc1NzE0NDkwMSwtMT
-E4NzUwODA5NCwtODQ0OTY2OTQyLC00MTk1OTg4MTMsMTQ0MzAw
-NTE3NSwtMTMzMTM5NzY5NiwtOTQ3MjIwMzQ5LDE2NjY3OTY5Nj
-EsLTgyNzcxNTM0OCwtMjAxMjUxMjExOCwyMDE0NzI4MywtNDU1
-MDE4NzExLDQ2NzI5NzY2NiwtNzc4OTU0NzYxLC05NDk5MDEyNj
-AsMTM2MDgwNzMzNSwtMTQ2MDc0Njg5Nyw1NDU1MjM0NDUsLTEx
-NTczMTI5MV19
+eyJoaXN0b3J5IjpbLTc4MzEzNTUzNSwtNzU3MTQ0OTAxLC0xMT
+g3NTA4MDk0LC04NDQ5NjY5NDIsLTQxOTU5ODgxMywxNDQzMDA1
+MTc1LC0xMzMxMzk3Njk2LC05NDcyMjAzNDksMTY2Njc5Njk2MS
+wtODI3NzE1MzQ4LC0yMDEyNTEyMTE4LDIwMTQ3MjgzLC00NTUw
+MTg3MTEsNDY3Mjk3NjY2LC03Nzg5NTQ3NjEsLTk0OTkwMTI2MC
+wxMzYwODA3MzM1LC0xNDYwNzQ2ODk3LDU0NTUyMzQ0NSwtMTE1
+NzMxMjkxXX0=
 -->
