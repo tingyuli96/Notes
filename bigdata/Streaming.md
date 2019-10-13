@@ -77,18 +77,18 @@ then
 
 submit jobs
 ```
-gcloud dataproc jobs submit pyspark --cluster hw31 ~/Documents/code/hw/large-data-stream/twitter-sentiment-analysis-movie-rating/streaming/HTTP_Client_tweepy.py
+gcloud dataproc jobs submit pyspark --cluster hw33 
 ```
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5OTEwMDg0NywxNTMzMDY3ODgyLC04Mj
-E3OTM3NjIsMTIyMTQ0NDMyMCwxNTcyMzQzMjYsMTE2ODM2NjE2
-MywtMzYzNDQ0NTg5LDExMDU4ODY1NTksLTc1NzE0NDkwMSwtMT
-E4NzUwODA5NCwtODQ0OTY2OTQyLC00MTk1OTg4MTMsMTQ0MzAw
-NTE3NSwtMTMzMTM5NzY5NiwtOTQ3MjIwMzQ5LDE2NjY3OTY5Nj
-EsLTgyNzcxNTM0OCwtMjAxMjUxMjExOCwyMDE0NzI4MywtNDU1
-MDE4NzExXX0=
+eyJoaXN0b3J5IjpbNjQyNDk2NDcwLC0yOTkxMDA4NDcsMTUzMz
+A2Nzg4MiwtODIxNzkzNzYyLDEyMjE0NDQzMjAsMTU3MjM0MzI2
+LDExNjgzNjYxNjMsLTM2MzQ0NDU4OSwxMTA1ODg2NTU5LC03NT
+cxNDQ5MDEsLTExODc1MDgwOTQsLTg0NDk2Njk0MiwtNDE5NTk4
+ODEzLDE0NDMwMDUxNzUsLTEzMzEzOTc2OTYsLTk0NzIyMDM0OS
+wxNjY2Nzk2OTYxLC04Mjc3MTUzNDgsLTIwMTI1MTIxMTgsMjAx
+NDcyODNdfQ==
 -->
