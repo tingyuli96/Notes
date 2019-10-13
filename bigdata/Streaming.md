@@ -62,7 +62,7 @@ gcloud beta dataproc clusters create hw31 --optional-components=ANACONDA,JUPYTER
 
 ### Way2: using socket
 ```
-gcloud beta dataproc clusters create hw32 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=requests-oauthlib google-cloud-bigquery' --bucket bigdata-01 --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node
+gcloud beta dataproc clusters create hw33 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=requests-oauthlib google-cloud-bigquery tweepy' --bucket bigdata-01 --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node
 ```
 pull from twitter api ok
 
@@ -84,7 +84,7 @@ gcloud dataproc jobs submit pyspark --cluster hw31 ~/Documents/code/hw/large-dat
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NTk2NjQwMCwxNTMzMDY3ODgyLC04Mj
+eyJoaXN0b3J5IjpbLTI5OTEwMDg0NywxNTMzMDY3ODgyLC04Mj
 E3OTM3NjIsMTIyMTQ0NDMyMCwxNTcyMzQzMjYsMTE2ODM2NjE2
 MywtMzYzNDQ0NTg5LDExMDU4ODY1NTksLTc1NzE0NDkwMSwtMT
 E4NzUwODA5NCwtODQ0OTY2OTQyLC00MTk1OTg4MTMsMTQ0MzAw
