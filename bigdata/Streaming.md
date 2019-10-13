@@ -54,23 +54,16 @@ gcloud dataproc jobs submit pyspark --cluster hw3 --jars gs://bigdata-01/spark-s
 ```
 
 
-### Way2: Kafka
+### Way1: Kafka
 with kafka
 ```
 gcloud beta dataproc clusters create hw31 --optional-components=ANACONDA,JUPYTER,ZOOKEEPER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=google-cloud-bigquery' --bucket bigdata-01 --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node --initialization-actions gs://bigdata-01/kafka/kafka.sh
 ```
+
 ### Way2: using socket
-
-
-
-
 ```
 gcloud beta dataproc clusters create hw32 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=requests-oauthlib google-cloud-bigquery' --bucket bigdata-01 --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node
 ```
-
-
-## Using socket to get a stream
-
 pull from twitter api ok
 
 
@@ -78,11 +71,11 @@ pull from twitter api ok
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTQ1MDQ4NDAsMTU3MjM0MzI2LDExNj
-gzNjYxNjMsLTM2MzQ0NDU4OSwxMTA1ODg2NTU5LC03NTcxNDQ5
-MDEsLTExODc1MDgwOTQsLTg0NDk2Njk0MiwtNDE5NTk4ODEzLD
-E0NDMwMDUxNzUsLTEzMzEzOTc2OTYsLTk0NzIyMDM0OSwxNjY2
-Nzk2OTYxLC04Mjc3MTUzNDgsLTIwMTI1MTIxMTgsMjAxNDcyOD
-MsLTQ1NTAxODcxMSw0NjcyOTc2NjYsLTc3ODk1NDc2MSwtOTQ5
-OTAxMjYwXX0=
+eyJoaXN0b3J5IjpbMTIyMTQ0NDMyMCwxNTcyMzQzMjYsMTE2OD
+M2NjE2MywtMzYzNDQ0NTg5LDExMDU4ODY1NTksLTc1NzE0NDkw
+MSwtMTE4NzUwODA5NCwtODQ0OTY2OTQyLC00MTk1OTg4MTMsMT
+Q0MzAwNTE3NSwtMTMzMTM5NzY5NiwtOTQ3MjIwMzQ5LDE2NjY3
+OTY5NjEsLTgyNzcxNTM0OCwtMjAxMjUxMjExOCwyMDE0NzI4My
+wtNDU1MDE4NzExLDQ2NzI5NzY2NiwtNzc4OTU0NzYxLC05NDk5
+MDEyNjBdfQ==
 -->
