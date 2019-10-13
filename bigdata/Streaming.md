@@ -70,6 +70,9 @@ using tweepy
 `pip install tweepy --user`
 use user flag or there will be an error
 
+if using anacoda,
+then 
+`conda install xxx `
 
 submit jobs
 ```
@@ -80,11 +83,11 @@ gcloud dataproc jobs submit pyspark --cluster hw31 ~/Documents/code/hw/large-dat
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMzA2Nzg4MiwtODIxNzkzNzYyLDEyMj
-E0NDQzMjAsMTU3MjM0MzI2LDExNjgzNjYxNjMsLTM2MzQ0NDU4
-OSwxMTA1ODg2NTU5LC03NTcxNDQ5MDEsLTExODc1MDgwOTQsLT
-g0NDk2Njk0MiwtNDE5NTk4ODEzLDE0NDMwMDUxNzUsLTEzMzEz
-OTc2OTYsLTk0NzIyMDM0OSwxNjY2Nzk2OTYxLC04Mjc3MTUzND
-gsLTIwMTI1MTIxMTgsMjAxNDcyODMsLTQ1NTAxODcxMSw0Njcy
-OTc2NjZdfQ==
+eyJoaXN0b3J5IjpbMTUyNzU3MzM3OSwxNTMzMDY3ODgyLC04Mj
+E3OTM3NjIsMTIyMTQ0NDMyMCwxNTcyMzQzMjYsMTE2ODM2NjE2
+MywtMzYzNDQ0NTg5LDExMDU4ODY1NTksLTc1NzE0NDkwMSwtMT
+E4NzUwODA5NCwtODQ0OTY2OTQyLC00MTk1OTg4MTMsMTQ0MzAw
+NTE3NSwtMTMzMTM5NzY5NiwtOTQ3MjIwMzQ5LDE2NjY3OTY5Nj
+EsLTgyNzcxNTM0OCwtMjAxMjUxMjExOCwyMDE0NzI4MywtNDU1
+MDE4NzExXX0=
 -->
