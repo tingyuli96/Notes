@@ -73,6 +73,7 @@ use user flag or there will be an error
 if using anacoda,
 then 
 `conda install xxx `
+`conda install -c conda-forge tweepy`
 
 submit jobs
 ```
@@ -83,7 +84,7 @@ gcloud dataproc jobs submit pyspark --cluster hw31 ~/Documents/code/hw/large-dat
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNzU3MzM3OSwxNTMzMDY3ODgyLC04Mj
+eyJoaXN0b3J5IjpbMTg0NTk2NjQwMCwxNTMzMDY3ODgyLC04Mj
 E3OTM3NjIsMTIyMTQ0NDMyMCwxNTcyMzQzMjYsMTE2ODM2NjE2
 MywtMzYzNDQ0NTg5LDExMDU4ODY1NTksLTc1NzE0NDkwMSwtMT
 E4NzUwODA5NCwtODQ0OTY2OTQyLC00MTk1OTg4MTMsMTQ0MzAw
