@@ -59,6 +59,9 @@ with kafka
 ```
 gcloud beta dataproc clusters create hw32 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=requests-oauthlib google-cloud-bigquery' --bucket bigdata-01 --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node
 ```
+
+
+## Using socket to get a stream
 ```
 gcloud beta dataproc clusters create hw31 --optional-components=ANACONDA,JUPYTER,ZOOKEEPER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=google-cloud-bigquery' --bucket bigdata-01 --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node --initialization-actions gs://bigdata-01/kafka/kafka.sh
 ```
@@ -66,12 +69,14 @@ pull from twitter api ok
 
 
 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2ODM2NjE2MywtMzYzNDQ0NTg5LDExMD
-U4ODY1NTksLTc1NzE0NDkwMSwtMTE4NzUwODA5NCwtODQ0OTY2
-OTQyLC00MTk1OTg4MTMsMTQ0MzAwNTE3NSwtMTMzMTM5NzY5Ni
-wtOTQ3MjIwMzQ5LDE2NjY3OTY5NjEsLTgyNzcxNTM0OCwtMjAx
-MjUxMjExOCwyMDE0NzI4MywtNDU1MDE4NzExLDQ2NzI5NzY2Ni
-wtNzc4OTU0NzYxLC05NDk5MDEyNjAsMTM2MDgwNzMzNSwtMTQ2
-MDc0Njg5N119
+eyJoaXN0b3J5IjpbMTU3MjM0MzI2LDExNjgzNjYxNjMsLTM2Mz
+Q0NDU4OSwxMTA1ODg2NTU5LC03NTcxNDQ5MDEsLTExODc1MDgw
+OTQsLTg0NDk2Njk0MiwtNDE5NTk4ODEzLDE0NDMwMDUxNzUsLT
+EzMzEzOTc2OTYsLTk0NzIyMDM0OSwxNjY2Nzk2OTYxLC04Mjc3
+MTUzNDgsLTIwMTI1MTIxMTgsMjAxNDcyODMsLTQ1NTAxODcxMS
+w0NjcyOTc2NjYsLTc3ODk1NDc2MSwtOTQ5OTAxMjYwLDEzNjA4
+MDczMzVdfQ==
 -->
