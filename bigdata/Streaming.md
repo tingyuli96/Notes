@@ -71,15 +71,20 @@ using tweepy
 use user flag or there will be an error
 
 
+submit jobs
+```
+gcloud dataproc jobs submit pyspark --cluster hw31 ~/Documents/code/hw/large-data-stream/twitter-sentiment-analysis-movie-rating/streaming/HTTP_Client_tweepy.py
+```
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMTc5Mzc2MiwxMjIxNDQ0MzIwLDE1Nz
-IzNDMyNiwxMTY4MzY2MTYzLC0zNjM0NDQ1ODksMTEwNTg4NjU1
-OSwtNzU3MTQ0OTAxLC0xMTg3NTA4MDk0LC04NDQ5NjY5NDIsLT
-QxOTU5ODgxMywxNDQzMDA1MTc1LC0xMzMxMzk3Njk2LC05NDcy
-MjAzNDksMTY2Njc5Njk2MSwtODI3NzE1MzQ4LC0yMDEyNTEyMT
-E4LDIwMTQ3MjgzLC00NTUwMTg3MTEsNDY3Mjk3NjY2LC03Nzg5
-NTQ3NjFdfQ==
+eyJoaXN0b3J5IjpbMTUzMzA2Nzg4MiwtODIxNzkzNzYyLDEyMj
+E0NDQzMjAsMTU3MjM0MzI2LDExNjgzNjYxNjMsLTM2MzQ0NDU4
+OSwxMTA1ODg2NTU5LC03NTcxNDQ5MDEsLTExODc1MDgwOTQsLT
+g0NDk2Njk0MiwtNDE5NTk4ODEzLDE0NDMwMDUxNzUsLTEzMzEz
+OTc2OTYsLTk0NzIyMDM0OSwxNjY2Nzk2OTYxLC04Mjc3MTUzND
+gsLTIwMTI1MTIxMTgsMjAxNDcyODMsLTQ1NTAxODcxMSw0Njcy
+OTc2NjZdfQ==
 -->
