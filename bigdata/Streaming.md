@@ -53,18 +53,24 @@ publish topic on it
 gcloud dataproc jobs submit pyspark --cluster hw3 --jars gs://bigdata-01/spark-streaming-kafka-0-8-assembly_2.11-2.3.3.jar streaming.py  -- 35.237.39.36:9092 test
 ```
 
+
+### Way2: Kafka
+with kafka
+```
+gcloud beta dataproc clusters create hw31 --optional-components=ANACONDA,JUPYTER,ZOOKEEPER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=google-cloud-bigquery' --bucket bigdata-01 --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node --initialization-actions gs://bigdata-01/kafka/kafka.sh
+```
 ### Way2: using socket
 
-with kafka
+
+
+
 ```
 gcloud beta dataproc clusters create hw32 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=requests-oauthlib google-cloud-bigquery' --bucket bigdata-01 --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node
 ```
 
 
 ## Using socket to get a stream
-```
-gcloud beta dataproc clusters create hw31 --optional-components=ANACONDA,JUPYTER,ZOOKEEPER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=google-cloud-bigquery' --bucket bigdata-01 --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --single-node --initialization-actions gs://bigdata-01/kafka/kafka.sh
-```
+
 pull from twitter api ok
 
 
@@ -72,11 +78,11 @@ pull from twitter api ok
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MjM0MzI2LDExNjgzNjYxNjMsLTM2Mz
-Q0NDU4OSwxMTA1ODg2NTU5LC03NTcxNDQ5MDEsLTExODc1MDgw
-OTQsLTg0NDk2Njk0MiwtNDE5NTk4ODEzLDE0NDMwMDUxNzUsLT
-EzMzEzOTc2OTYsLTk0NzIyMDM0OSwxNjY2Nzk2OTYxLC04Mjc3
-MTUzNDgsLTIwMTI1MTIxMTgsMjAxNDcyODMsLTQ1NTAxODcxMS
-w0NjcyOTc2NjYsLTc3ODk1NDc2MSwtOTQ5OTAxMjYwLDEzNjA4
-MDczMzVdfQ==
+eyJoaXN0b3J5IjpbLTEwMTQ1MDQ4NDAsMTU3MjM0MzI2LDExNj
+gzNjYxNjMsLTM2MzQ0NDU4OSwxMTA1ODg2NTU5LC03NTcxNDQ5
+MDEsLTExODc1MDgwOTQsLTg0NDk2Njk0MiwtNDE5NTk4ODEzLD
+E0NDMwMDUxNzUsLTEzMzEzOTc2OTYsLTk0NzIyMDM0OSwxNjY2
+Nzk2OTYxLC04Mjc3MTUzNDgsLTIwMTI1MTIxMTgsMjAxNDcyOD
+MsLTQ1NTAxODcxMSw0NjcyOTc2NjYsLTc3ODk1NDc2MSwtOTQ5
+OTAxMjYwXX0=
 -->
