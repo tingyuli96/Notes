@@ -83,7 +83,7 @@ then
 `conda install -c conda-forge tweepy`
 
 ```
-gcloud beta dataproc clusters create hw33 \
+gcloud beta dataproc clusters create <cluster-name> \
 --optional-components=ANACONDA,JUPYTER \
 --image-version=preview --enable-component-gateway \
 --metadata 'PIP_PACKAGES=requests_oauthlib google-cloud-bigquery tweepy' \
@@ -109,11 +109,11 @@ Error:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTY0NzIzMTcsMTY5NjE3ODg1NiwzOT
-Q2NDA5MzIsODU4MTE0MjE3LDE3Mzc4NTM2NDYsNzA2NTcwMjc5
-LDEwNjc0ODU0NjIsLTgxMTMzOTk3Niw5MTI3NTc1NDksMTYyNj
-YwMDMxNSw0MTQ0MjYxNjAsNzIyMTU1OTAyLDY0MjQ5NjQ3MCwt
-Mjk5MTAwODQ3LDE1MzMwNjc4ODIsLTgyMTc5Mzc2MiwxMjIxND
-Q0MzIwLDE1NzIzNDMyNiwxMTY4MzY2MTYzLC0zNjM0NDQ1ODld
+eyJoaXN0b3J5IjpbLTk0NDI5MDAzNCwtMTU5NjQ3MjMxNywxNj
+k2MTc4ODU2LDM5NDY0MDkzMiw4NTgxMTQyMTcsMTczNzg1MzY0
+Niw3MDY1NzAyNzksMTA2NzQ4NTQ2MiwtODExMzM5OTc2LDkxMj
+c1NzU0OSwxNjI2NjAwMzE1LDQxNDQyNjE2MCw3MjIxNTU5MDIs
+NjQyNDk2NDcwLC0yOTkxMDA4NDcsMTUzMzA2Nzg4MiwtODIxNz
+kzNzYyLDEyMjE0NDQzMjAsMTU3MjM0MzI2LDExNjgzNjYxNjNd
 fQ==
 -->
