@@ -62,10 +62,10 @@ gcloud beta dataproc clusters create hw31 --optional-components=ANACONDA,JUPYTER
 
 ### Way2: using socket
 ```
-gcloud beta dataproc clusters create hw33 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=requests_oauthlib google-cloud-bigquery tweepy' --metadata gcs-connector-version=1.9.16 --metadata bigquery-connector-version=0.13.16 --bucket bigdata-01 --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --initialization-actions gs://dataproc-initialization-actions/connectors/connectors.sh --single-node 
+gcloud beta dataproc clusters create hw33 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata PIP_PACKAGES=requests_oauthlib google-cloud-bigquery tweepy --metadata gcs-connector-version=1.9.16 --metadata bigquery-connector-version=0.13.16 --bucket bigdata-01 --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --initialization-actions gs://dataproc-initialization-actions/connectors/connectors.sh --single-node 
 ```
 ```
-gcloud beta dataproc clusters create hw34 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=requests_oauthlib' --metadata gcs-connector-version=1.9.16 --metadata bigquery-connector-version=0.13.16 --bucket bigdata-01 --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --initialization-actions gs://dataproc-initialization-actions/connectors/connectors.sh --single-node 
+gcloud beta dataproc clusters create hw34 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata PIP_PACKAGES=requests requests_oauthlibr --metadata gcs-connector-version=1.9.16 --metadata bigquery-connector-version=0.13.16 --bucket bigdata-01 --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --initialization-actions gs://dataproc-initialization-actions/connectors/connectors.sh --single-node 
 ```
 
 pull from twitter api ok
@@ -94,11 +94,11 @@ Error:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMTMzOTk3Niw5MTI3NTc1NDksMTYyNj
-YwMDMxNSw0MTQ0MjYxNjAsNzIyMTU1OTAyLDY0MjQ5NjQ3MCwt
-Mjk5MTAwODQ3LDE1MzMwNjc4ODIsLTgyMTc5Mzc2MiwxMjIxND
-Q0MzIwLDE1NzIzNDMyNiwxMTY4MzY2MTYzLC0zNjM0NDQ1ODks
-MTEwNTg4NjU1OSwtNzU3MTQ0OTAxLC0xMTg3NTA4MDk0LC04ND
-Q5NjY5NDIsLTQxOTU5ODgxMywxNDQzMDA1MTc1LC0xMzMxMzk3
-Njk2XX0=
+eyJoaXN0b3J5IjpbMTA2NzQ4NTQ2MiwtODExMzM5OTc2LDkxMj
+c1NzU0OSwxNjI2NjAwMzE1LDQxNDQyNjE2MCw3MjIxNTU5MDIs
+NjQyNDk2NDcwLC0yOTkxMDA4NDcsMTUzMzA2Nzg4MiwtODIxNz
+kzNzYyLDEyMjE0NDQzMjAsMTU3MjM0MzI2LDExNjgzNjYxNjMs
+LTM2MzQ0NDU4OSwxMTA1ODg2NTU5LC03NTcxNDQ5MDEsLTExOD
+c1MDgwOTQsLTg0NDk2Njk0MiwtNDE5NTk4ODEzLDE0NDMwMDUx
+NzVdfQ==
 -->
