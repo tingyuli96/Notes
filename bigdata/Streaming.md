@@ -64,6 +64,10 @@ gcloud beta dataproc clusters create hw31 --optional-components=ANACONDA,JUPYTER
 ```
 gcloud beta dataproc clusters create hw33 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=requests_oauthlib google-cloud-bigquery tweepy' --metadata gcs-connector-version=1.9.16 --metadata bigquery-connector-version=0.13.16 --bucket bigdata-01 --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --initialization-actions gs://dataproc-initialization-actions/connectors/connectors.sh --single-node 
 ```
+```
+gcloud beta dataproc clusters create hw34 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=requests_oauthlib' --metadata gcs-connector-version=1.9.16 --metadata bigquery-connector-version=0.13.16 --bucket bigdata-01 --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --initialization-actions gs://dataproc-initialization-actions/connectors/connectors.sh --single-node 
+```
+
 pull from twitter api ok
 
 using tweepy
@@ -90,11 +94,11 @@ Error:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEyNzU3NTQ5LDE2MjY2MDAzMTUsNDE0ND
-I2MTYwLDcyMjE1NTkwMiw2NDI0OTY0NzAsLTI5OTEwMDg0Nywx
-NTMzMDY3ODgyLC04MjE3OTM3NjIsMTIyMTQ0NDMyMCwxNTcyMz
-QzMjYsMTE2ODM2NjE2MywtMzYzNDQ0NTg5LDExMDU4ODY1NTks
-LTc1NzE0NDkwMSwtMTE4NzUwODA5NCwtODQ0OTY2OTQyLC00MT
-k1OTg4MTMsMTQ0MzAwNTE3NSwtMTMzMTM5NzY5NiwtOTQ3MjIw
-MzQ5XX0=
+eyJoaXN0b3J5IjpbLTgxMTMzOTk3Niw5MTI3NTc1NDksMTYyNj
+YwMDMxNSw0MTQ0MjYxNjAsNzIyMTU1OTAyLDY0MjQ5NjQ3MCwt
+Mjk5MTAwODQ3LDE1MzMwNjc4ODIsLTgyMTc5Mzc2MiwxMjIxND
+Q0MzIwLDE1NzIzNDMyNiwxMTY4MzY2MTYzLC0zNjM0NDQ1ODks
+MTEwNTg4NjU1OSwtNzU3MTQ0OTAxLC0xMTg3NTA4MDk0LC04ND
+Q5NjY5NDIsLTQxOTU5ODgxMywxNDQzMDA1MTc1LC0xMzMxMzk3
+Njk2XX0=
 -->
