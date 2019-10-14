@@ -90,8 +90,7 @@ gcloud beta dataproc clusters create hw33 \
 --metadata gcs-connector-version=1.9.16 \
 --metadata bigquery-connector-version=0.13.16 \
 --bucket bigdata-01 \
---initialization-actions=gs://dataproc-initialization-actions/python/pip-install.sh \
---initialization-actions gs://dataproc-initialization-actions/connectors/connectors.sh \
+--initialization-actions=gs://dataproc-initialization-actions/python/pip-install.sh,gs://dataproc-initialization-actions/connectors/connectors.sh \
 --single-node 
 ```
 
@@ -110,7 +109,7 @@ Error:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzc2NDMwMjksMTY5NjE3ODg1NiwzOT
+eyJoaXN0b3J5IjpbLTE1OTY0NzIzMTcsMTY5NjE3ODg1NiwzOT
 Q2NDA5MzIsODU4MTE0MjE3LDE3Mzc4NTM2NDYsNzA2NTcwMjc5
 LDEwNjc0ODU0NjIsLTgxMTMzOTk3Niw5MTI3NTc1NDksMTYyNj
 YwMDMxNSw0MTQ0MjYxNjAsNzIyMTU1OTAyLDY0MjQ5NjQ3MCwt
