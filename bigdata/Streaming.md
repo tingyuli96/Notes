@@ -82,6 +82,10 @@ then
 `conda install xxx `
 `conda install -c conda-forge tweepy`
 
+```
+gcloud beta dataproc clusters create hw33 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=requests_oauthlib google-cloud-bigquery tweepy', gcs-connector-version=1.9.16, bigquery-connector-version=0.13.16 --bucket bigdata-01 --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --initialization-actions gs://dataproc-initialization-actions/connectors/connectors.sh --single-node 
+```
+
 submit jobs
 ```
 gcloud dataproc jobs submit pyspark --cluster hw33 
@@ -97,11 +101,11 @@ Error:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk0NjQwOTMyLDg1ODExNDIxNywxNzM3OD
-UzNjQ2LDcwNjU3MDI3OSwxMDY3NDg1NDYyLC04MTEzMzk5NzYs
-OTEyNzU3NTQ5LDE2MjY2MDAzMTUsNDE0NDI2MTYwLDcyMjE1NT
-kwMiw2NDI0OTY0NzAsLTI5OTEwMDg0NywxNTMzMDY3ODgyLC04
-MjE3OTM3NjIsMTIyMTQ0NDMyMCwxNTcyMzQzMjYsMTE2ODM2Nj
-E2MywtMzYzNDQ0NTg5LDExMDU4ODY1NTksLTc1NzE0NDkwMV19
+eyJoaXN0b3J5IjpbNzAxOTcyOTIsMzk0NjQwOTMyLDg1ODExND
+IxNywxNzM3ODUzNjQ2LDcwNjU3MDI3OSwxMDY3NDg1NDYyLC04
+MTEzMzk5NzYsOTEyNzU3NTQ5LDE2MjY2MDAzMTUsNDE0NDI2MT
+YwLDcyMjE1NTkwMiw2NDI0OTY0NzAsLTI5OTEwMDg0NywxNTMz
+MDY3ODgyLC04MjE3OTM3NjIsMTIyMTQ0NDMyMCwxNTcyMzQzMj
+YsMTE2ODM2NjE2MywtMzYzNDQ0NTg5LDExMDU4ODY1NTldfQ==
 
 -->
