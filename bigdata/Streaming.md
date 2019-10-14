@@ -64,6 +64,7 @@ gcloud beta dataproc clusters create hw31 --optional-components=ANACONDA,JUPYTER
 ```
 gcloud beta dataproc clusters create hw33 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata PIP_PACKAGES=requests_oauthlib google-cloud-bigquery tweepy --metadata gcs-connector-version=1.9.16 --metadata bigquery-connector-version=0.13.16 --bucket bigdata-01 --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --initialization-actions gs://dataproc-initialization-actions/connectors/connectors.sh --single-node 
 ```
+up can not install pip packages don't know why
 ```
 gcloud beta dataproc clusters create hw35 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=requests requests_oauthlib' --metadata gcs-connector-version=1.9.16 --metadata bigquery-connector-version=0.13.16 --bucket bigdata-01 --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --initialization-actions gs://dataproc-initialization-actions/connectors/connectors.sh --single-node 
 ```
@@ -94,11 +95,11 @@ Error:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MjI0MDMxOSwxMDY3NDg1NDYyLC04MT
-EzMzk5NzYsOTEyNzU3NTQ5LDE2MjY2MDAzMTUsNDE0NDI2MTYw
-LDcyMjE1NTkwMiw2NDI0OTY0NzAsLTI5OTEwMDg0NywxNTMzMD
-Y3ODgyLC04MjE3OTM3NjIsMTIyMTQ0NDMyMCwxNTcyMzQzMjYs
-MTE2ODM2NjE2MywtMzYzNDQ0NTg5LDExMDU4ODY1NTksLTc1Nz
-E0NDkwMSwtMTE4NzUwODA5NCwtODQ0OTY2OTQyLC00MTk1OTg4
-MTNdfQ==
+eyJoaXN0b3J5IjpbNzA2NTcwMjc5LDEwNjc0ODU0NjIsLTgxMT
+MzOTk3Niw5MTI3NTc1NDksMTYyNjYwMDMxNSw0MTQ0MjYxNjAs
+NzIyMTU1OTAyLDY0MjQ5NjQ3MCwtMjk5MTAwODQ3LDE1MzMwNj
+c4ODIsLTgyMTc5Mzc2MiwxMjIxNDQ0MzIwLDE1NzIzNDMyNiwx
+MTY4MzY2MTYzLC0zNjM0NDQ1ODksMTEwNTg4NjU1OSwtNzU3MT
+Q0OTAxLC0xMTg3NTA4MDk0LC04NDQ5NjY5NDIsLTQxOTU5ODgx
+M119
 -->
