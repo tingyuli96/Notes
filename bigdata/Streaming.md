@@ -65,7 +65,7 @@ gcloud beta dataproc clusters create hw31 --optional-components=ANACONDA,JUPYTER
 gcloud beta dataproc clusters create hw33 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata PIP_PACKAGES=requests_oauthlib google-cloud-bigquery tweepy --metadata gcs-connector-version=1.9.16 --metadata bigquery-connector-version=0.13.16 --bucket bigdata-01 --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --initialization-actions gs://dataproc-initialization-actions/connectors/connectors.sh --single-node 
 ```
 ```
-gcloud beta dataproc clusters create hw34 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata PIP_PACKAGES=requests requests_oauthlib --metadata gcs-connector-version=1.9.16 --metadata bigquery-connector-version=0.13.16 --bucket bigdata-01 --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --initialization-actions gs://dataproc-initialization-actions/connectors/connectors.sh --single-node 
+gcloud beta dataproc clusters create hw35 --optional-components=ANACONDA,JUPYTER --image-version=preview --enable-component-gateway --metadata 'PIP_PACKAGES=requests requests_oauthlib' --metadata gcs-connector-version=1.9.16 --metadata bigquery-connector-version=0.13.16 --bucket bigdata-01 --initialization-actions gs://dataproc-initialization-actions/python/pip-install.sh --initialization-actions gs://dataproc-initialization-actions/connectors/connectors.sh --single-node 
 ```
 
 pull from twitter api ok
@@ -94,7 +94,7 @@ Error:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4Nzk4NzgwNCwxMDY3NDg1NDYyLC04MT
+eyJoaXN0b3J5IjpbMTc4MjI0MDMxOSwxMDY3NDg1NDYyLC04MT
 EzMzk5NzYsOTEyNzU3NTQ5LDE2MjY2MDAzMTUsNDE0NDI2MTYw
 LDcyMjE1NTkwMiw2NDI0OTY0NzAsLTI5OTEwMDg0NywxNTMzMD
 Y3ODgyLC04MjE3OTM3NjIsMTIyMTQ0NDMyMCwxNTcyMzQzMjYs
