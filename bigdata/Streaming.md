@@ -89,7 +89,8 @@ gcloud beta dataproc clusters create <cluster-name> \
 --metadata 'PIP_PACKAGES=requests_oauthlib google-cloud-bigquery tweepy' \
 --metadata gcs-connector-version=1.9.16 \
 --metadata bigquery-connector-version=0.13.16 \
---bucket bigdata-01 \
+--project <ProjectID>
+--bucket <Bucket> \
 --initialization-actions=gs://dataproc-initialization-actions/python/pip-install.sh,gs://dataproc-initialization-actions/connectors/connectors.sh \
 --single-node 
 ```
@@ -109,11 +110,11 @@ Error:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NDI5MDAzNCwtMTU5NjQ3MjMxNywxNj
-k2MTc4ODU2LDM5NDY0MDkzMiw4NTgxMTQyMTcsMTczNzg1MzY0
-Niw3MDY1NzAyNzksMTA2NzQ4NTQ2MiwtODExMzM5OTc2LDkxMj
-c1NzU0OSwxNjI2NjAwMzE1LDQxNDQyNjE2MCw3MjIxNTU5MDIs
-NjQyNDk2NDcwLC0yOTkxMDA4NDcsMTUzMzA2Nzg4MiwtODIxNz
-kzNzYyLDEyMjE0NDQzMjAsMTU3MjM0MzI2LDExNjgzNjYxNjNd
+eyJoaXN0b3J5IjpbLTcxMjM2OTY5NSwtOTQ0MjkwMDM0LC0xNT
+k2NDcyMzE3LDE2OTYxNzg4NTYsMzk0NjQwOTMyLDg1ODExNDIx
+NywxNzM3ODUzNjQ2LDcwNjU3MDI3OSwxMDY3NDg1NDYyLC04MT
+EzMzk5NzYsOTEyNzU3NTQ5LDE2MjY2MDAzMTUsNDE0NDI2MTYw
+LDcyMjE1NTkwMiw2NDI0OTY0NzAsLTI5OTEwMDg0NywxNTMzMD
+Y3ODgyLC04MjE3OTM3NjIsMTIyMTQ0NDMyMCwxNTcyMzQzMjZd
 fQ==
 -->
