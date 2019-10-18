@@ -115,8 +115,8 @@ gcloud beta dataproc clusters create hw3 \
 --metadata 'PIP_PACKAGES=requests_oauthlib google-cloud-bigquery tweepy' \
 --metadata gcs-connector-version=1.9.16 \
 --metadata bigquery-connector-version=0.13.16 \
---project <ProjectID>
---bucket <Bucket> \
+--project bigdata-251723 \
+--bucket bigdata-01 \
 --initialization-actions=gs://dataproc-initialization-actions/python/pip-install.sh,gs://dataproc-initialization-actions/connectors/connectors.sh \
 --single-node
 ```
@@ -124,11 +124,11 @@ gcloud beta dataproc clusters create hw3 \
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwOTU3NTY5NCwtNzEyMzY5Njk1LC05ND
-QyOTAwMzQsLTE1OTY0NzIzMTcsMTY5NjE3ODg1NiwzOTQ2NDA5
-MzIsODU4MTE0MjE3LDE3Mzc4NTM2NDYsNzA2NTcwMjc5LDEwNj
-c0ODU0NjIsLTgxMTMzOTk3Niw5MTI3NTc1NDksMTYyNjYwMDMx
-NSw0MTQ0MjYxNjAsNzIyMTU1OTAyLDY0MjQ5NjQ3MCwtMjk5MT
-AwODQ3LDE1MzMwNjc4ODIsLTgyMTc5Mzc2MiwxMjIxNDQ0MzIw
-XX0=
+eyJoaXN0b3J5IjpbMjA0MjEwODkzLDIxMDk1NzU2OTQsLTcxMj
+M2OTY5NSwtOTQ0MjkwMDM0LC0xNTk2NDcyMzE3LDE2OTYxNzg4
+NTYsMzk0NjQwOTMyLDg1ODExNDIxNywxNzM3ODUzNjQ2LDcwNj
+U3MDI3OSwxMDY3NDg1NDYyLC04MTEzMzk5NzYsOTEyNzU3NTQ5
+LDE2MjY2MDAzMTUsNDE0NDI2MTYwLDcyMjE1NTkwMiw2NDI0OT
+Y0NzAsLTI5OTEwMDg0NywxNTMzMDY3ODgyLC04MjE3OTM3NjJd
+fQ==
 -->
