@@ -109,7 +109,7 @@ Error:
 
 
 ```
-gcloud beta dataproc clusters create hw3 \
+gcloud beta dataproc clusters create hw34 \
 --optional-components=ANACONDA,JUPYTER \
 --image-version=preview --enable-component-gateway \
 --metadata 'PIP_PACKAGES=requests_oauthlib google-cloud-bigquery tweepy' \
@@ -124,11 +124,11 @@ gcloud beta dataproc clusters create hw3 \
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MjEwODkzLDIxMDk1NzU2OTQsLTcxMj
-M2OTY5NSwtOTQ0MjkwMDM0LC0xNTk2NDcyMzE3LDE2OTYxNzg4
-NTYsMzk0NjQwOTMyLDg1ODExNDIxNywxNzM3ODUzNjQ2LDcwNj
-U3MDI3OSwxMDY3NDg1NDYyLC04MTEzMzk5NzYsOTEyNzU3NTQ5
-LDE2MjY2MDAzMTUsNDE0NDI2MTYwLDcyMjE1NTkwMiw2NDI0OT
-Y0NzAsLTI5OTEwMDg0NywxNTMzMDY3ODgyLC04MjE3OTM3NjJd
+eyJoaXN0b3J5IjpbLTgyNDk1NzQwMywyMDQyMTA4OTMsMjEwOT
+U3NTY5NCwtNzEyMzY5Njk1LC05NDQyOTAwMzQsLTE1OTY0NzIz
+MTcsMTY5NjE3ODg1NiwzOTQ2NDA5MzIsODU4MTE0MjE3LDE3Mz
+c4NTM2NDYsNzA2NTcwMjc5LDEwNjc0ODU0NjIsLTgxMTMzOTk3
+Niw5MTI3NTc1NDksMTYyNjYwMDMxNSw0MTQ0MjYxNjAsNzIyMT
+U1OTAyLDY0MjQ5NjQ3MCwtMjk5MTAwODQ3LDE1MzMwNjc4ODJd
 fQ==
 -->
