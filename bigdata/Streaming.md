@@ -120,15 +120,22 @@ gcloud beta dataproc clusters create hw34 \
 --initialization-actions=gs://dataproc-initialization-actions/python/pip-install.sh,gs://dataproc-initialization-actions/connectors/connectors.sh \
 --single-node
 ```
-
+--optional-components=ANACONDA,JUPYTER \
+--image-version=preview --enable-component-gateway \
+--metadata 'PIP_PACKAGES=requests_oauthlib google-cloud-bigquery tweepy' \
+--metadata gcs-connector-version=1.9.16 \
+--metadata bigquery-connector-version=0.13.16 \
+--project bigdata-251723 \
+--initialization-actions=gs://dataproc-initialization-actions/python/pip-install.sh,gs://dataproc-initialization-actions/connectors/connectors.sh \
+--single-node
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNDk1NzQwMywyMDQyMTA4OTMsMjEwOT
-U3NTY5NCwtNzEyMzY5Njk1LC05NDQyOTAwMzQsLTE1OTY0NzIz
-MTcsMTY5NjE3ODg1NiwzOTQ2NDA5MzIsODU4MTE0MjE3LDE3Mz
-c4NTM2NDYsNzA2NTcwMjc5LDEwNjc0ODU0NjIsLTgxMTMzOTk3
-Niw5MTI3NTc1NDksMTYyNjYwMDMxNSw0MTQ0MjYxNjAsNzIyMT
-U1OTAyLDY0MjQ5NjQ3MCwtMjk5MTAwODQ3LDE1MzMwNjc4ODJd
-fQ==
+eyJoaXN0b3J5IjpbLTIwNTQwMDI5NzIsMjA0MjEwODkzLDIxMD
+k1NzU2OTQsLTcxMjM2OTY5NSwtOTQ0MjkwMDM0LC0xNTk2NDcy
+MzE3LDE2OTYxNzg4NTYsMzk0NjQwOTMyLDg1ODExNDIxNywxNz
+M3ODUzNjQ2LDcwNjU3MDI3OSwxMDY3NDg1NDYyLC04MTEzMzk5
+NzYsOTEyNzU3NTQ5LDE2MjY2MDAzMTUsNDE0NDI2MTYwLDcyMj
+E1NTkwMiw2NDI0OTY0NzAsLTI5OTEwMDg0NywxNTMzMDY3ODgy
+XX0=
 -->
