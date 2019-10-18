@@ -108,13 +108,27 @@ Error:
 `gcloud dataproc jobs kill <JOBID>`
 
 
+```
+gcloud beta dataproc clusters create hw3 \
+--optional-components=ANACONDA,JUPYTER \
+--image-version=preview --enable-component-gateway \
+--metadata 'PIP_PACKAGES=requests_oauthlib google-cloud-bigquery tweepy' \
+--metadata gcs-connector-version=1.9.16 \
+--metadata bigquery-connector-version=0.13.16 \
+--project <ProjectID>
+--bucket <Bucket> \
+--initialization-actions=gs://dataproc-initialization-actions/python/pip-install.sh,gs://dataproc-initialization-actions/connectors/connectors.sh \
+--single-node
+```
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMjM2OTY5NSwtOTQ0MjkwMDM0LC0xNT
-k2NDcyMzE3LDE2OTYxNzg4NTYsMzk0NjQwOTMyLDg1ODExNDIx
-NywxNzM3ODUzNjQ2LDcwNjU3MDI3OSwxMDY3NDg1NDYyLC04MT
-EzMzk5NzYsOTEyNzU3NTQ5LDE2MjY2MDAzMTUsNDE0NDI2MTYw
-LDcyMjE1NTkwMiw2NDI0OTY0NzAsLTI5OTEwMDg0NywxNTMzMD
-Y3ODgyLC04MjE3OTM3NjIsMTIyMTQ0NDMyMCwxNTcyMzQzMjZd
-fQ==
+eyJoaXN0b3J5IjpbMjEwOTU3NTY5NCwtNzEyMzY5Njk1LC05ND
+QyOTAwMzQsLTE1OTY0NzIzMTcsMTY5NjE3ODg1NiwzOTQ2NDA5
+MzIsODU4MTE0MjE3LDE3Mzc4NTM2NDYsNzA2NTcwMjc5LDEwNj
+c0ODU0NjIsLTgxMTMzOTk3Niw5MTI3NTc1NDksMTYyNjYwMDMx
+NSw0MTQ0MjYxNjAsNzIyMTU1OTAyLDY0MjQ5NjQ3MCwtMjk5MT
+AwODQ3LDE1MzMwNjc4ODIsLTgyMTc5Mzc2MiwxMjIxNDQ0MzIw
+XX0=
 -->
