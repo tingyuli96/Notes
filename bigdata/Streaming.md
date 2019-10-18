@@ -120,6 +120,7 @@ gcloud beta dataproc clusters create hw34 \
 --initialization-actions=gs://dataproc-initialization-actions/python/pip-install.sh,gs://dataproc-initialization-actions/connectors/connectors.sh \
 --single-node
 ```
+gcloud beta dataproc clusters create hw34 \
 --optional-components=ANACONDA,JUPYTER \
 --image-version=preview --enable-component-gateway \
 --metadata 'PIP_PACKAGES=requests_oauthlib google-cloud-bigquery tweepy' \
@@ -131,7 +132,7 @@ gcloud beta dataproc clusters create hw34 \
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTQwMDI5NzIsMjA0MjEwODkzLDIxMD
+eyJoaXN0b3J5IjpbLTE1NjMyMjcxNjEsMjA0MjEwODkzLDIxMD
 k1NzU2OTQsLTcxMjM2OTY5NSwtOTQ0MjkwMDM0LC0xNTk2NDcy
 MzE3LDE2OTYxNzg4NTYsMzk0NjQwOTMyLDg1ODExNDIxNywxNz
 M3ODUzNjQ2LDcwNjU3MDI3OSwxMDY3NDg1NDYyLC04MTEzMzk5
